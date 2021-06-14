@@ -39,3 +39,24 @@ kotlin -classpath Hello.jar HelloKt
 ```
 
 Si mixte de java & kotlin il convient d'utiliser `java -classpath` par contre si c'est un projet uniquement kotlin alors utliser `kotlin`.
+
+
+## if, when
+
+```kotlin
+fun isAlive(numberCells: Int) = when {
+ numberCells < 2 -> false
+ numberCells > 3 -> false
+ numberCells == 3 -> true
+ else false
+}
+
+```
+
+Plus étonnant le `when` fonctionne également avec le type `any` :
+
+```kotlin
+
+
+
+```
